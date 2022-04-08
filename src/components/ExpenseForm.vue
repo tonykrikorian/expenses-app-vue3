@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div>
     <form @submit.prevent="onSubmit">
       <div class="form-group">
         <label for="category">Category</label>
@@ -45,12 +45,6 @@ export default {
 </script>
 
 <style scoped>
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 form {
   width: 20rem;
   border: 1px solid black;
