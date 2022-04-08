@@ -50,6 +50,7 @@ form {
   border: 1px solid black;
   padding: 2rem;
   border-radius: 10%;
+  margin-bottom: 2rem;
 }
 label {
   display: block;

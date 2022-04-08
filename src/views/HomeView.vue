@@ -1,8 +1,7 @@
 <template>
-  <div>
+  <div class="main-container">
     <ExpenseForm @submited-expense-category="calculateExpenseAmmounts" />
-  </div>
-  <div>
+
     <MainExpensesTable :tableData="tableData" />
   </div>
 </template>
@@ -46,3 +45,11 @@ export default {
   },
 };
 </script>
+<style scoped>
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem 0 1rem;
+}
+</style>
