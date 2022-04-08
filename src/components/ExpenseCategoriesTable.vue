@@ -60,3 +60,12 @@ export default {
   },
 };
 </script>
+<style scoped>
+table,
+th,
+td {
+  border: 1px solid #c4dcf3;
+  border-collapse: collapse;
+  padding: 10px;
+}
+</style>
