@@ -3,7 +3,7 @@
     <ExpenseForm @submited-expense-category="calculateExpenseAmmounts" />
   </div>
   <div>
-    <ExpenseCategoriesTable :tableData="tableData" />
+    <MainExpensesTable :tableData="tableData" />
   </div>
 </template>
 
@@ -11,7 +11,7 @@
 // @ is an alias to /src
 //import HelloWorld from "@/components/HelloWorld.vue";
 import ExpenseForm from "../components/ExpenseForm.vue";
-import ExpenseCategoriesTable from "../components/ExpenseCategoriesTable.vue";
+import MainExpensesTable from "../components/MainExpensesTable.vue";
 
 export default {
   name: "HomeView",
@@ -30,7 +30,7 @@ export default {
   },
   components: {
     ExpenseForm,
-    ExpenseCategoriesTable,
+    MainExpensesTable,
   },
   methods: {
     calculateExpenseAmmounts(expenseCategory) {

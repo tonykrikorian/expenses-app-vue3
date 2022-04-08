@@ -29,7 +29,7 @@
 </template>
 <script>
 export default {
-  name: "ExpenseCategoriesTable",
+  name: "MainExpensesTable",
   props: {
     tableData: {
       type: Array,
