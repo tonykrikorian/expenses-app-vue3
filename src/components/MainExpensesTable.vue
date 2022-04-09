@@ -1,5 +1,5 @@
 <template>
-  <div v-if="tableData.length">
+  <div>
     <table border="1">
       <thead>
         <th>item</th>
@@ -9,8 +9,8 @@
         <th>balance</th>
       </thead>
       <tbody>
-        <tr v-for="data in tableData" :key="data.item">
-          <td>{{ data.category }}</td>
+        <tr v-for="data in tableData" :key="data.id">
+          <td>{{ data.category.name }}</td>
           <td>{{ data.percentage }}%</td>
           <td>{{ data.theoricalAmmount }}</td>
           <td>{{ data.realAmmount }}</td>
