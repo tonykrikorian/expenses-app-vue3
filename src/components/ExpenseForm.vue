@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import ServiceClient from "../services/serviceClient";
 export default {
   data() {
     return {
@@ -24,7 +25,7 @@ export default {
     };
   },
   methods: {
-    onSubmit() {
+    async onSubmit() {
       if (!this.category || !this.percentage) {
         alert("Debe rellenar todos los campos");
         return;
@@ -35,10 +36,11 @@ export default {
         percentage: Number(this.percentage),
       };
 
-      this.$emit("submited-expense-category", expenseCategory);
-
-      this.category = "";
-      this.percentage = "";
+      const response = await ServiceClient.post("/categories/create", {
+        name: expenseCategory.category,
+        percentage: expenseCategory.percentage,
+      });
+      this.$emit("submited-expense-category", response.data);
     },
   },
 };
