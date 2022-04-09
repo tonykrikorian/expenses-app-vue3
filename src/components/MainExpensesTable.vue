@@ -2,11 +2,12 @@
   <div>
     <table border="1">
       <thead>
-        <th>item</th>
-        <th>percentage</th>
-        <th>theoricalAmmount</th>
-        <th>realAmmount</th>
-        <th>balance</th>
+        <th>Nombre</th>
+        <th>Porcentaje</th>
+        <th>Monto teorico</th>
+        <th>Monto real</th>
+        <th>Saldo</th>
+        <th>Fecha creación</th>
       </thead>
       <tbody>
         <tr v-for="data in tableData" :key="data.id">
@@ -15,6 +16,7 @@
           <td>{{ data.theoricalAmmount }}</td>
           <td>{{ data.realAmmount }}</td>
           <td>{{ data.balance }}</td>
+          <td>{{ data.createdAt }}</td>
         </tr>
         <tr>
           <td>Total</td>
