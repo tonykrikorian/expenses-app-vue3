@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="tableData.length">
     <table border="1">
       <thead>
         <th>Nombre</th>
