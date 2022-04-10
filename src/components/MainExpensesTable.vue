@@ -28,6 +28,7 @@
       </tbody>
     </table>
   </div>
+  <div v-else>No existen datos para mostrar</div>
 </template>
 <script>
 export default {
